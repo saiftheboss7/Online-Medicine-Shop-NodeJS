@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Order Medicine</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link rel="stylesheet" href="assets/Admin/dist/css/public.css" />
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="assets/css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="assets/css/flexslider.css">
+
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+	
+	<!-- Date Picker -->
+	<link rel="stylesheet" href="assets/css/bootstrap-datepicker.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="assets/fonts/flaticon/font/flaticon.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="assets/js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+
+
+	<div class="colorlib-loader"></div>
+
+	<div id="page">
+
+    <% include partials/universal-nav %>
+
+		<aside id="colorlib-hero">
+			<div class="flexslider">
+				<ul class="slides">
+			   	<li style="background-image: url(assets/images/cover-img-18.jpg);">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 slider-text">
+				   				<div class="slider-text-inner text-center">
+				   					<h1>Order Medicine</h1>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			  	</ul>
+		  	</div>
+		</aside>
+
+		<div class="colorlib-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="wrap-division">
+
+									<div class="col-md-12 col-md-offset-0 heading2 animate-box">
+										<h2>Ordering Medicine - <%=result.name%></h2>
+									</div>
+									<div class="row">
+		
+										<div class="col-md-12 animate-box">
+											<div class="room-wrap">
+												<div class="row">
+            									  <form role="form" name="hotels-enq" method="post" action="">
+									                <div class="form-group">
+									                  <label>Name</label>
+									                  <input type="text" class="form-control" id="enq-input" placeholder="Your Name" name="name" value="" required pattern="^([a-zA-Z\s'-]+\.)*[a-zA-Z\s'-]+$" title="Please Enter Your First Name">
+									                </div>
+									                <div class="form-group">
+									                  <label>Email</label>
+									                  <input type="text" class="form-control" id="enq-input" placeholder="Your Email" name="email" value="">
+									                </div>
+									                <div class="form-group">
+									                  <label>Phone</label>
+									                  <input type="text" class="form-control" id="enq-input" placeholder="Your Phone Number" name="phone" value="" required pattern="^[0-9]{3,15}$" title="Enter Your Phone Number">
+																	</div>
+																	<div class="form-group">
+									                  <label>Quantity</label>
+																	(between 1 and 20): <input type="number" name="quantity" min="1" max="20">
+									                </div>
+									                <div class="form-group">
+									                  <label>Message</label>
+                  									  <textarea class="form-control" rows="3" id="enq-textarea" placeholder="Write Your Message" name="enq_message" required></textarea>
+                                                      </div>	
+                                                      
+                                                      
+
+                                                    <div class="error">
+                                                      <% if(message != null){ %>
+                                                      <p><span id="error"><%= message %></span></p>
+                                                      <% } %>
+                                                    </div>
+
+                  									<button type="submit" class="btn btn-primary">SUBMIT</button>
+                  								   </form>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+    <% include partials/subscribe %>
+
+    <% include partials/footer %>
+
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="assets/js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="assets/js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="assets/js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="assets/js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="assets/js/magnific-popup-options.js"></script>
+	<!-- Date Picker -->
+	<script src="assets/js/bootstrap-datepicker.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="assets/js/jquery.stellar.min.js"></script>
+
+	<!-- Main -->
+	<script src="assets/js/main.js"></script>
+
+
+// <script type="text/javascript">
+// $(document).ready(function() {
+//   $(".room-unavailable").css("display", "none");
+//   $('#enq-room-available').keyup(function() {
+//     var value = $(this).val();
+//     var hotel_id= document.getElementById("hotel_id").value;
+//     var room_type_id= document.getElementById("room_type_id").value;
+
+//     $.ajax({
+//       type: 'post',
+//       url: '../controllers/room_available_check.php',
+//       data: {
+//       	'room_available' : value,
+//       	'hotel_id' : hotel_id,
+//       	'room_type_id' : room_type_id
+//       },
+//       success: function(r) {
+//         $('.room-unavailable').html(r);
+//         $(".room-unavailable").css("display", "");
+//       }
+//     });
+//   });
+// });
+// </script>
+
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5b82fb9aafc2c34e96e7eb01/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+	</body>
+</html>
+

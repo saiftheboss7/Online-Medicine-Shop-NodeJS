@@ -1,0 +1,203 @@
+.fr-box.fr-basic .fr-element {
+    min-height: 140px !important;
+}
+#uname , #pwd  {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.login-button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    border: none;
+    color: #fff;
+}
+
+.cancelbtn:hover {
+    opacity: 0.8;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.login-panel {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+.comment-form-container {
+    background: #F0F0F0;
+    border: #e0dfdf 1px solid;
+    padding: 20px;
+    border-radius: 2px;
+}
+
+.input-row {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    border-radius: 2px;
+    padding: 10px;
+    border: #e0dfdf 1px solid;
+}
+
+.btn-submit {
+    padding: 10px 20px;
+    background: #333;
+    border: #1d1d1d 1px solid;
+    color: #f0f0f0;
+    font-size: 0.9em;
+    width: 100px;
+    border-radius: 2px;
+    cursor:pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.comment-row {
+    border-bottom: #e0dfdf 1px solid;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.outer-comment {
+    background: #F0F0F0;
+    padding: 20px;
+    border: #dedddd 1px solid;
+}
+
+span.commet-row-label {
+    font-style: italic;
+}
+
+span.posted-by {
+    color: #09F;
+}
+
+.comment-info {
+    font-size: 0.8em;
+}
+.comment-text {
+    margin: 10px 0px;
+}
+.btn-reply {
+    font-size: 0.8em;
+    text-decoration: underline;
+    color: #888787;
+    cursor:pointer;
+}
+#comment-message {
+    margin-left: 20px;
+    color: #189a18;
+    display: none;
+}
+
+.alert-primary {
+    color: #004085 !important;
+    background-color: #cce5ff !important;
+    border-color: #b8daff !important;
+}
+
+.paymentWrap {
+    padding: 50px;
+}
+
+.paymentWrap .paymentBtnGroup {
+    max-width: 800px;
+    margin: auto;
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod {
+    padding: 40px;
+    box-shadow: none;
+    position: relative;
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod.active {
+    outline: none !important;
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod.active .method {
+    border-color: #4cd264;
+    outline: none !important;
+    box-shadow: 0px 3px 22px 0px #7b7b7b;
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod .method {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    bottom: 3px;
+    left: 3px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid transparent;
+    transition: all 0.5s;
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod .method.visa {
+    background-image: url("../img/visa.png");
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod .method.master-card {
+    background-image: url("../img/master.png");
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod .method.bkash {
+    background-image: url("../img/bkash.png");
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod .method.cod {
+    background-image: url("../img/cod.png");
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod .method:hover {
+    border-color: #4cd264;
+    outline: none !important;
+}

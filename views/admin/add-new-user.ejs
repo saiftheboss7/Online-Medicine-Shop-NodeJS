@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Add New User</title>
+
+<% include ../partials/header %>
+<% include ../partials/admin-sidebar %>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Dashboard
+        <small>Welcome!</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
+        <li class="active">Here</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content container-fluid">
+
+      <!--------------------------
+        | Your Page Content Here |
+        -------------------------->
+
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Add New</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form" name="AddUser" method="post" action="">
+                <div class="form-group">
+                  <label> Full Name</label>
+                  <input type="text" class="form-control" id="sub-input" placeholder="Your Name" name="name" value=""required pattern="^([a-zA-Z\s'-]+\.)*[a-zA-Z\s'-]+$" title="Please Enter Your Name">
+                </div>
+              <div class="form-group">
+                  <label>User Name</label>
+                  <input type="text" class="form-control" id="username" placeholder="Your user Name" name="username" value=""required pattern="^([a-zA-Z\s'-]+\.)*[a-zA-Z\s'-]+$" title="Please Enter Your Name">
+                </div>
+                <div class="form-group">
+                  <label>User Type</label>
+                  <select class="form-control" name="usertype" required>
+                      <option value="">-SELECT-</option>				
+                        <option value="ADMIN">ADMIN</option>
+                        <option value="CUSTOMER">CUSTOMER</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Your Email" name="email" value="">
+                </div>																	
+                <div class="form-group">
+                  <label>Enter your New Password</label>
+                  <input type="password" class="form-control" id="sub-input" placeholder="Enter Your New password" name="password" value="">
+                </div>
+
+              <div class="box-footer">
+                             
+                <button type="submit" class="btn btn-primary">ADD</button>
+              </div>
+            </form>
+          </div>
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->

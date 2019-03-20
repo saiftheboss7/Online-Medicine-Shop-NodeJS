@@ -1,0 +1,42 @@
+<nav class="colorlib-nav" role="navigation">
+	<div class="top-menu">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-2">
+					<div id="colorlib-logo"><a href="">Med Help</a></div>
+				</div>
+				<div class="col-xs-10 text-right menu-1">
+					<ul>
+						<li class=""><a href="/">Home</a></li>
+						<li class=""><a href="/">Medicines</a></li>
+						<li class=""><a href="#">Blog</a></li>
+						<li class=""><a href="#">About</a></li>
+						<li class=""><a href="#">Contact</a></li>
+
+						<% if (name == null){ %>
+							<li id="id01"><a href="/login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >Login</a></li>
+						<% } else{ %>  
+							<li><a href="/logout">Logout</a></li>
+						<% } %>                        
+
+
+						<% if(name == null){ %>
+							<li class=""><a href="/register">Register</a></li>
+						<% } else{ %>  
+							<li><a href="/admindashboard">Admin</a></li>
+						<% } %>
+
+						<!-- <li class="has-dropdown">
+							<a href="#">Your Currency</a>
+							<ul class="dropdown">
+								<li class="<?php echo $_SESSION['currency']=="USD" ? "active" : "" ?>"><a href="currency.php?currency=USD">USD</a></li>
+								<li class="<?php echo $_SESSION['currency']=="BDT" ? "active" : "" ?>"><a href="currency.php?currency=BDT">BDT</a></li>
+
+							</ul>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
